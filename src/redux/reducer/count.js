@@ -11,6 +11,8 @@ const count = (state = initState, action) => {
       return (state = state + action.payload);
     case typeAction.ACT_DOWN:
       return (state = state - action.payload);
+    case typeAction.ACT_RANDOM:
+      return (state = Math.ceil(Math.random() * 100));
     default:
       break;
   }

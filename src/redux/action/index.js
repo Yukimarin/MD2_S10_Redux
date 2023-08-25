@@ -13,3 +13,10 @@ export const act_down = (value) => {
     payload: value,
   };
 };
+
+export const act_random = (value) => {
+  return {
+    type: typeAction.ACT_RANDOM,
+    payload: value,
+  };
+};
